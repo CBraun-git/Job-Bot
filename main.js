@@ -2,6 +2,9 @@ import { Actor, log } from 'apify';
 import { PlaywrightCrawler, Dataset } from 'crawlee';
 import dayjs from 'dayjs';
 
+// Immer Debug aktivieren, egal was in Apify gesetzt ist
+log.setLevel(log.LEVELS.DEBUG);
+
 const WEBHOOK_URL = 'https://golden-stable-gull.ngrok-free.app/webhook-test/e50e9f23-3959-4ec9-9b24-2364e327a9b6';
 
 const SEARCH_TERMS = [
